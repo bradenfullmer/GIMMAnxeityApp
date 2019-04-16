@@ -38,7 +38,7 @@ function addMarker(map, location){
     content: contentString,
     maxWidth: 400
   });
-  marker.addListener('click' function(){
+  marker.addListener('click', function(){
     infoWindow.open(map,marker);
   });
   google.maps.event.addListener(infoWindow, 'domReady', function(){
